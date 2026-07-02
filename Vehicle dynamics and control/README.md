@@ -25,12 +25,12 @@ A full write-up of all six studies, following an OEM-style *Engineering Problem 
 
 | # | Folder | What it does |
 |---|--------|--------------|
-| 1 | `01 Normal Force Estimation` | Estimates all four tire normal forces from a_x, a_y, roll/yaw rate and roll-stiffness distribution; validated against CarMaker ground truth (RMS 340-435 N); triggers a low-load warning at <2/3 static load. |
-| 2 | `02 Yaw Gain Comparission` | Linear single-track (bicycle) model identified against a CarMaker system-ID model (`iddata`/`tfest`) at 80/110/130 kmph via chirp-steer input; compares Bode gain/frequency response. |
-| 3 | `03 Cruise and Later Acc Control` | PI-based cruise controller tracking a multi-step speed profile (0-120 kmph); curvature-based curve-speed limiter capping target speed to ±2 m/s² lateral acceleration. |
-| 4 | `04 Handling Diagram` | Constant-radius steer-ramp handling diagram comparing an IC baseline against a 50/50 weight-distributed EV variant, plus a re-tuned EV suspension case. |
-| 5 | `05 Vehicle Speed Estimation` | Trivial vs. tire-model-corrected wheel-hub speed per wheel, transformed to CoG, with max-normal-force wheel selection (overall RMS 0.255 m/s) and a parameter-uncertainty analysis. |
-| 6 | `06 QCM Vertical Dynamics` | Quarter-car state-space model: stability check, road-to-sprung-mass Bode response, relative-degree/causal-invertibility analysis, and a hysteresis-based switching strategy for the piecewise-linear (bump/rebound) damper model. |
+| 1 | `Normal Force Estimation` | Estimates all four tire normal forces from a_x, a_y, roll/yaw rate and roll-stiffness distribution; validated against CarMaker ground truth (RMS 340-435 N); triggers a low-load warning at <2/3 static load. |
+| 2 | `Yaw Gain Comparission` | Linear single-track (bicycle) model identified against a CarMaker system-ID model (`iddata`/`tfest`) at 80/110/130 kmph via chirp-steer input; compares Bode gain/frequency response. |
+| 3 | `Cruise and Later Acc Control` | PI-based cruise controller tracking a multi-step speed profile (0-120 kmph); curvature-based curve-speed limiter capping target speed to ±2 m/s² lateral acceleration. |
+| 4 | `Handling Diagram` | Constant-radius steer-ramp handling diagram comparing an IC baseline against a 50/50 weight-distributed EV variant, plus a re-tuned EV suspension case. |
+| 5 | `Vehicle Speed Estimation` | Trivial vs. tire-model-corrected wheel-hub speed per wheel, transformed to CoG, with max-normal-force wheel selection (overall RMS 0.255 m/s) and a parameter-uncertainty analysis. |
+| 6 | `QCM Vertical Dynamics` | Quarter-car state-space model: stability check, road-to-sprung-mass Bode response, relative-degree/causal-invertibility analysis, and a hysteresis-based switching strategy for the piecewise-linear (bump/rebound) damper model. |
 
 ## Tools
 
