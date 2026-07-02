@@ -4,7 +4,7 @@ Simulation, estimation, and control studies in **IPG CarMaker** and **MATLAB/Sim
 
 Developed as part of **Master's program**, Chalmers University of Technology.
 
-A full write-up of all six studies, following an OEM-style *Engineering Problem → Objective → Model → Results → Insights* structure, is compiled in [`vehicle dynamics and motion control.pdf`](./vehicle%20dynamics%20and%20motion%20control.pdf).
+*Engineering Problem → Objective → Model → Results → Insights* structure is compiled in [`vehicle dynamics and motion control.pdf`](./vehicle%20dynamics%20and%20motion%20control.pdf).
 
 ## Repository Structure
 
