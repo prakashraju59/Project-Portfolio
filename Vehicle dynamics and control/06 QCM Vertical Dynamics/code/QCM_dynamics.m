@@ -1,4 +1,3 @@
-%% hand in dynamics
 %qcm paramters
 
 Ms=1800; %in Kg
@@ -8,13 +7,6 @@ Ds=9*10^3; %in Ns/m;
 %Ds=0; %in Ns/m;
 Ct=774*10^3; %in N/m
 
-%equation for qcm
-%Ms.zs/ddot=Fsz
-%Mus.zu/ddot=Frz-Fsz
-%Fsz=Cs(Zu-Zs)+Ds(Zu/dot-Zs/dot)
-%Frz=Ct(Zr-Zu)
-
-%%smtg new
 alpha = 0.4;
 ds_ext = 1.5 * 9e3;
 ds_com = 0.5 * 9e3;
@@ -40,8 +32,8 @@ else
     disp('System is unstable.');
 end
 
-poles=pole(sysQCM)
-tranferfunction=tf(sysQCM)
+poles=pole(sysQCM);
+tranferfunction=tf(sysQCM);
 poles2=pole(sysQCM2); 
 tranferfunction2=tf(sysQCM2);
 %% response
