@@ -1,5 +1,5 @@
-run('~\task1\Vehicle_parameters.m')
-load('~\task2\steady_circle.mat')
+run('Vehicle_parameters.m')
+load('steady_circle.mat')
 
 %% state space comparision
 
