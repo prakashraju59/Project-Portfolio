@@ -87,5 +87,3 @@ title('Wheel hub speed')
 grid on
 txt = ['RMS:' RMS_v];
 text(16.5,18,txt)
-
-%% task 4
