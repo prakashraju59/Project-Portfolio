@@ -12,7 +12,7 @@ track_wd=1.65;              %Track width in M
 Whl_r=0.36;                 %Nominal wheel radius in M
 Cog_h=0.35;                 %Height of CoG relative road
 
-%% TASK 1
+%% 1
 C_nx=40; %normalized tyre stiffness
 Whl_a=SWA./ste_ge_ra;       %Wheel angle
 
@@ -52,7 +52,7 @@ ylabel('Wheel hub speed m/s')
 legend('VxwFL', 'VxwFF','VxwRL','VxwRR','Vx true')
 title('wheel hub velocity with tire model')
 
-%% task 2
+%% 2
 P_VxFL = VxwFL.*cos(Whl_a)+track_wd/2.*wz;
 P_VxFR = VxwFR.*cos(Whl_a)-track_wd/2.*wz;
 P_VxRL = VxwRL.*cos(0)+track_wd/2.*wz;
@@ -67,7 +67,7 @@ ylabel('Speed projected to COG m/s')
 legend('P_VxFL','P_VxFF','P_VxRL','P_VxRR','Vx true')
 title('Wheel hub speed transformed to COG')
 
-%% task 3
+%% 3
 P_V_all=[P_VxFL P_VxFR P_VxRL P_VxRR]';
 T_v_all=[abs(FzFL./(TpFL-TbFL)) abs(FzFR./(TpFR-TbFR)) ...
     abs(FzFR./(TpRL-TbRL)) abs(FzRR./(TpRR-TbRR))]';
